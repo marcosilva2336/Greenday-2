@@ -1,0 +1,254 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.wrapper {
+    background: rgb(255, 255, 255);
+    padding: 0 20px 0 20px;
+}
+
+.row {
+    width: 900px;
+    height: 550px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-group {
+    z-index: 1;
+    position: absolute;
+    margin-top: -40%;
+    display: flex;
+    justify-content: start;
+    align-self: self-start;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.left {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+}
+
+.input-box {
+    width: 330px;
+    box-sizing: border-box;
+}
+
+.input-box header {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0 10px 0 10px;
+}
+
+.input {
+    height: 45px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    outline: none;
+    margin-bottom: 20px;
+    color: #40414a;
+}
+
+.input-box .input-field label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-field .input:focus~label {
+    top: -10px;
+    font-size: 13px;
+}
+
+.input-field .input:valid~label {
+    top: -10px;
+    font-size: 13px;
+    color: rgb(119, 187, 17);
+}
+
+.input-field .input:focus,
+.input-field~label {
+    border-bottom: 1px solid #0e8d2a;
+}
+
+
+
+.submit:hover {
+    border-color: black !important;
+    background: #0c8158 !important;
+}
+
+.cadastro {
+    text-align: center;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+.botao {
+    text-align: center;
+    font-size: small;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.botao span {
+    color: rgb(21, 1, 1);
+}
+
+span a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #000;
+    transition: .5s;
+}
+
+span a:hover {
+    text-decoration: underline;
+    color: #000;
+}
+
+.side-image {
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    position: relative;
+    border-radius: 10px 0 0 10px;
+
+}
+
+.side-image img {
+    max-width: 100%;
+    height: 550px;
+
+}
+
+.col-md-6 #theme-toggler {
+    font-size: 2rem;
+    color: var(--color-text);
+    position: absolute;
+    left: 80%;
+    bottom: -33%;
+}
+
+.col-md-6 #text-size {
+    font-size: 2rem;
+    color: var(--color-text);
+    position: absolute;
+    left: 64%;
+    bottom: -30%;
+}
+
+/* Tema escuro*/
+.dark-theme {
+    --color-text: #fff;
+    --color-background: #181a1e;
+    --color-dark: #202529;
+    --color-white: #202529;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 .5rem 1.5rem rgb(255, 255, 255);
+    --color-background: #181a1e;
+}
+
+.dark-theme .wrapper {
+    background: var(--color-background);
+    border: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.dark-theme .row {
+    background: var(--color-background);
+    box-shadow: 0 .5rem 1.5rem rgb(255, 255, 255);
+}
+
+.dark-theme .col-md-6 {
+    background: var(--color-background);
+    color: #fff;
+}
+
+.dark-theme .input {
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+.dark-theme .submit {
+    background: var(--color-text) !important;
+    color: var(--color-background) !important;
+}
+
+.dark-theme .submit:hover{
+    background: #0c8158 !important;
+}
+
+.dark-theme span a{
+    color: var(--color-text);
+}
+
+.dark-theme .botao{
+    background: var(--color-text);
+    color: var(--color-background);
+}
+
+.dark-theme .botao:hover{
+    background: #0c8158;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .side-image {
+        border-radius: 10px 10px 0 0;
+        height: 30%;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .botao {
+        margin-top: 10px;
+    }
+
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .side-image {
+        display: none;
+    }
+
+    .row {
+        width: 100%;
+    }
+
+    .botao {
+        margin-top: 10px;
+    }
+
+    .side-image img {
+        display: none;
+    }
+}

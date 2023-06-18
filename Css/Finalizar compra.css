@@ -1,0 +1,269 @@
+body {
+    background-color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    transition: 0.5s;
+}
+
+header {
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 0.5rem 1rem rgb(111, 110, 110);
+}
+
+header #theme-toggler {
+    font-size: 2.5rem;
+    padding: 0 0.5rem;
+    color: var(--color-text);
+}
+
+header #text-size {
+    font-size: 2.5rem;
+    padding: 0 0.5rem;
+    color: var(--color-text);
+}
+
+header h1 {
+    font-size: 40px;
+    color: #000000;
+
+}
+
+header .shopping {
+    position: relative;
+    text-align: right;
+}
+
+.container section {
+    margin-top: 50px;
+    border: .1rem solid rgba(0, 0, 0, .1);
+    box-shadow: 0 0.5rem 1rem rgb(111, 110, 110);
+    border-radius: 0.4rem;
+}
+
+
+
+.container section h2 {
+    color: #000000 !important;
+}
+
+
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 10rem 2rem 0 4rem;
+}
+
+.footer .box-container .box {
+    flex: 1 1 20rem;
+}
+
+.footer .box-container .box h3 {
+    color: #333;
+    font-size: 1.rem;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box a {
+    display: block;
+    color: #666;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.footer .box-container .box a:hover {
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.footer .box-container .box img {
+    height: 2rem;
+    margin-top: 1.5rem;
+}
+
+.footer .credit {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.3rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+    color: #333;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+}
+
+.footer .credit span {
+    color: var(--green);
+}
+
+
+/* tema escuro */
+
+.dark-theme {
+    --color-text: #ffffff;
+    --color-background: #181a1e;
+    --color-dark: #202529;
+    --color-white: #202529;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 .5rem 1.5rem rgb(255, 255, 255);
+    --color-background: #181a1e;
+
+}
+
+
+.dark-theme body {
+    background: var(--color-background);
+}
+
+.dark-theme section {
+    background: var(--color-background);
+    color: var(--color-text);
+    box-shadow: 0 0.5rem 1rem rgb(111, 110, 110);
+
+}
+
+.dark-theme button {
+    background: var(--color-text);
+    border: none;
+    color: #000;
+}
+
+.dark-theme section label {
+    color: var(--color-text);
+}
+
+.dark-theme button:hover {
+    background: var(--color-dark);
+}
+
+.dark-theme .form-group .col-md-6 label {
+    color: #000;
+}
+
+.dark-theme .form-group .col-md-3 label {
+    color: #000;
+}
+
+.dark-theme .tab-pane {
+    color: #000;
+}
+
+.dark-theme header {
+    background: var(--color-background);
+    color: var(--color-text);
+    box-shadow: 0 0.5rem 1rem rgb(111, 110, 110);
+}
+
+.dark-theme header h1 {
+    color: var(--color-text);
+}
+
+
+.dark-theme header .shopping span {
+    background: var(--color-background);
+    color: var(--color-text);
+}
+
+
+
+
+
+.dark-theme .footer .credit span {
+    color: #fff;
+}
+
+.dark-theme .footer .credit {
+    color: var(--color-background);
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+    }
+
+    header #theme-toggler {
+        font-size: 3rem;
+    }
+
+    header #text-size {
+        font-size: 3rem;
+    }
+
+    .list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+        width: 70%;
+    }
+
+    .active .card {
+        left: calc(100% - 50%);
+    }
+
+    .active .container {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header {
+        width: 100%;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    header #theme-toggler {
+        font-size: 2.5rem;
+    }
+
+    header #text-size {
+        font-size: 2rem;
+    }
+
+    .list {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 70%;
+        font-size: 10px;
+        height: 70%;
+    }
+
+    .active .card {
+        left: calc(100% - 70%);
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .listCard li div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .listCard img {
+        width: 5rem;
+    }
+
+}

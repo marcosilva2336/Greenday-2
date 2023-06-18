@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/Black_Green_Modern_Bold_Greenery_Logo-removebg-preview.png"
+    type="image/x-icon">
+    <title>Pagamento</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/Css/bootstrap.css">
+    <link rel="stylesheet" href="/Css/Finalizar compra.css">
+</head>
+
+<body>
+ 
+  
+<div class="container">
+    <header>
+      
+         <a  href="/index.html" id="text-size" class="fas fa-home"></a><h1>Pagamento</h1>
+         <div class="shopping">
+           
+         </div>
+         <a href="#" id="theme-toggler"><span class="active"><i class="fas fa-moon"></i></span></a>
+         <a href="#" id="text-size" class="fa fa-text-height" onclick="increaseFontSize()"></a>
+        
+     </header>
+
+  
+  <section class="container">
+   
+    <div class="row">
+      <form class="col-lg-12" action="">
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputNome">Nome</label>
+            <input type="text" class="form-control" id="inputNome" placeholder="nome completo">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputCPF">CPF</label>
+            <input type="text" class="form-control" id="inputCPF" placeholder="xxx.xxx.xxx-xx">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" id="inputEmail" placeholder="Seu email">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputSenha">Senha</label>
+            <input type="password" class="form-control" id="inputSenha" placeholder="senha de acesso">
+          </div>
+          <div class="form-group col-12">
+            <label for="inputEndereco">Endereço</label>
+            <input type="text" class="form-control" id="inputEndereco" placeholder="Número, nome da rua e bairro.">
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputCidade">Cidade</label>
+            <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+          </div>
+          <div class="form-group col-md-3 col-6">
+            <label for="inputCidade">Estado</label>
+            <select id="inputCidade" class="form-control">
+              <option>Selecione o estado</option>
+              <option>Pernambuco</option>
+            </select>
+          </div>
+          <div class="form-group col-md-3 col-6">
+            <label for="inputCidade">Cep</label>
+            <input type="text" class="form-control" id="inputCidade" placeholder="xxxxx-xxx">
+          </div>
+        </div>
+        <div class="bg-light rounded box-shadow p-3 form-group">
+          <h2 class="h6 text-primary">Forma de pagamento</h2>
+          <nav class="nav btn-group mb-3" id="formaPagamento" role="tablist">
+            <button type="button" class="btn btn-secondary active btn-sm" id="nav-cartao-tab" data-toggle="tab" href="#nav-cartao" role="tab" aria-controls="nav-cartao" aria-selected="true">Cartão de crédito</button>
+            <button type="button" class="btn btn-secondary btn-sm" id="nav-boleto-tab" data-toggle="tab" href="#nav-boleto" role="tab" aria-controls="nav-boleto" aria-selected="false">Boleto bancário</button>
+          </nav>
+          <div class="tab-content" id="formaPagamentoConteudo">
+            <div class="tab-pane fade show active" id="nav-cartao" role="tabpanel" aria-labelledby="nav-cartao-tab">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputNomeCartao">Nome no cartão</label>
+                  <input type="text" class="form-control" id="inputNomeCartao" placeholder="Nome impresso no cartão">
+                </div>
+                <div class="form-group col-md-3 col-6">
+                  <label for="inputCidade">Mês</label>
+                  <select id="inputCidade" class="form-control">
+                    <option>Mês de validade...</option>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-3 col-6">
+                  <label for="inputAno">Year</label>
+                  <select id="inputAno" class="form-control">
+                    <option>Ano de validade...</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                    <option>2027</option>
+                    <option>2028</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputNumeroCartao">Número do cartão</label>
+                  <input type="text" class="form-control" id="inputNumeroCartao" placeholder="5555 5555 5555 5555">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputCodigo">Código de segurança</label>
+                  <input type="text" class="form-control" id="inputCodigo" placeholder="XXX">
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="nav-boleto" role="tabpanel" aria-labelledby="nav-boleto-tab">
+              <p class="lead">Clique em "Comprar" e enviaremos um boleto para seu e-mail</p>
+            </div>
+          </div>
+        </div>
+         
+        <div class="form-check">
+          <label class="form-check-label">
+            <input type="checkbox" class="form-check-input">
+            Eu concordo com os <a href="#">Termos e condições.</a>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-lg">Comprar</button>
+        
+
+          <div class="row mt-4">
+            <div class="col">
+              <span class="h4">R$20.99</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    
+  <section class="footer">
+
+   
+    <div class="box-container">
+      <div class="box">
+          <h3>links rápidos</h3>
+          <a href="#home">home</a>
+          <a href="#about">sobre</a>
+          <a href="#products">ofertas</a>
+          <a href="#review">valiações</a>
+          <a href="#contact">contato</a>
+      </div>
+
+
+      <div class="box">
+          <h3>links extras</h3>
+          <a href="/Greenday/Login do usuário/index.html">minha conta</a>
+          <a href="/Greenday/Tela de compras/index.html">meus pedidos</a>
+          <a href="#">English Version</a>
+      </div>
+
+      <div class="box">
+          <h3>locais</h3>
+          <a href="">Camaragibe</a>
+          <a href="">Recife</a>
+          <a href="">Olinda</a>
+      </div>
+
+      <div class="box">
+          <h3>informações de contato</h3>
+          <a href="">+55 81 2345-6789</a>
+          <a href="">+55 21 3345-6789</a>
+          <a href="">+55 11 2355-8789</a>
+          <a href="">greenday@gmail.com</a>
+          <img src="img/http___pluspng.com_img-png_payment-method-png-payment-options-1003.png"
+              alt="">
+      </div>
+  </div>
+
+  <div class="credit bg-primary text-center py-3">
+      <p class="mb-0">Greenday © 2023. | Todos os direitos reservados.</p>
+    </div>
+</section>
+
+
+
+    <script src="/Js/code.jquery.com_jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="/Js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.14.3_umd_popper.min.js de compras/js/cdnjs.cloudflare.com_ajax_libs_popper.js_1.14.3_umd_popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="/Js/bootstrap.js"></script>
+    <script src="/Js/Finalizarcompra.js"></script>
+</body>
+
+</html>

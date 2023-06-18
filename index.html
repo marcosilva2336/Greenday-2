@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/Black_Green_Modern_Bold_Greenery_Logo-removebg-preview.png" type="image/x-icon">
+    <title>GREENDAY</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Css/pagina principal.css">
+    <link rel="stylesheet" href="https://app.boteria.com.br/cdn/webchat/webchat.v2.css" />
+
+    <link rel="stylesheet" href="https://app.boteria.com.br/cdn/webchat/webchat.v2.css" />
+    <script src="https://app.boteria.com.br/cdn/libs/showdown.min.js"></script>
+    <script src="https://app.boteria.com.br/cdn/libs/axios.js"></script>
+    <script src="https://app.boteria.com.br/cdn/libs/socket.io.js"></script>
+    <script src="https://app.boteria.com.br/cdn/webchat/webchat.js"></script>
+
+</head>
+
+<body>
+    <!--incio da section header-->
+    <header>
+        <input type="checkbox" name="" id="toggler">
+        <label for="toggler" class="fas fa-bars"></label>
+
+        <a href="" class="logo">GREENDAY<span>.</span></a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">Sobre</a>
+            <a href="#products">Ofertas</a>
+            <a href="#review">Avaliações</a>
+            <a href="#contact">contato</a>
+        </nav>
+
+        <div class="icons">
+            <a href="#" class="fa-sharp fa-solid fa-language"></a>
+            <a href="/Tela de compras.html" class="fas fa-shopping-cart"></a>
+            <a href="/Login.html" class="fas fa-user"></a>
+            <a href="#" class="fa fa-text-height" onclick="increaseFontSize()"></a>
+            <a href="#" id="theme-toggler"><span class="active"><i class="fas fa-moon"></i></span></a>
+
+        </div>
+    </header>
+    <!--fim da section header-->
+
+
+
+    <!--INCIO DA HOME-->
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Flores frescas</h3>
+            <span>Flores lindas e naturais</span>
+            <p>Em nossa floricultura, a qualidade é nossa prioridade. Cada flor é cuidadosamente selecionada e cultivada
+                com os mais altos padrões de cuidado, garantindo que apenas o melhor chegue até você. Seja você esteja
+                procurando um buquê vibrante para celebrar uma ocasião especial ou um delicado arranjo para expressar
+                seus sentimentos mais profundos, nossa equipe experiente está pronta para criar uma obra-prima floral
+                personalizada, feita especialmente para você.</p>
+            <a href="" class="btn">Compre agora</a>
+        </div>
+    </section>
+
+    <!--FIM DA HOME-->
+
+    <!--INICIO DO SOBRE-->
+    <section class="about" id="about">
+        <h1 class="heading"> <span> Sobre </span> nós </h1>
+
+        <div class="row">
+
+            <div class="video-container">
+
+                <video src="/img/about-vid.mp4" loop autoplay muted></video>
+                <h3>Mais vendidas</h3>
+            </div>
+
+            <div class="content">
+                <h3>Porque nos escolher?</h3>
+                <p>
+                    Descubra a magia das flores tropicais em nossa floricultura! Com uma variedade requintada e
+                    qualidade superior, oferecemos uma experiência única para os clientes. E a melhor parte? As entregas
+                    são gratuitas! Surpreenda alguém especial com a beleza exótica das flores tropicais, cuidadosamente
+                    selecionadas e cultivadas.</p>
+
+                <p>
+                    Além disso, estamos comprometidos com o meio ambiente, cultivando nossas flores de forma
+                    responsável. Seja para um evento especial ou para presentear alguém, escolha nossa floricultura e
+                    mergulhe no encanto das flores tropicais.</p>
+                <a href="https://portalvidalivre.com/articles/543" class="btn">Saiba mais</a>
+            </div>
+
+
+        </div>
+    </section>
+    <!--FIM DO SOBRE-->
+
+
+    <!--INICIO DOS ICONES-->
+    <section class="icons-container">
+
+        <div class="icons">
+            <img src="/img/icon-1.png" alt="">
+            <div class="info">
+                <h3>Entrega grátis</h3>
+                <span>em todos os pedidos</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="/img/icon-2.png" alt="">
+            <div class="info">
+                <h3>10 dias para devolução</h3>
+                <span>garantia de reembolso</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="/img/icon-3.png" alt="">
+            <div class="info">
+                <h3>Ofertas e presentes</h3>
+                <span>em todos pedidos</span>
+            </div>
+        </div>
+
+        <div class="icons">
+            <img src="/img/icon-4.png" alt="">
+            <div class="info">
+                <h3>Segurança no pagamento</h3>
+                <span>protegidos pelo paypal</span>
+            </div>
+        </div>
+    </section>
+
+    <!--FIM DOS ICONES-->
+
+    <!--INICIO DOS PRODUTOS-->
+    <section class="products" id="products">
+        <h1 class="heading"> Melhores <span>Ofertas</span> </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="/img/Gloriosa-removebg-preview.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" id="addToCartBtn">+ Carrinho</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+
+                </div>
+                <div class="content">
+                    <h3>Gloriosa</h3>
+                    <div class="price"> R$12.99 <span>R$15.99</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-30%</span>
+                <div class="image">
+                    <img src="/img/Alpínia-removebg-preview.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" id="addToCartBtn">+ Carrinho</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Alpínia</h3>
+                    <div class="price"> R$15.99 <span>R$20.99</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-35%</span>
+                <div class="image">
+                    <img src="/img/Amarílis-removebg-preview.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" id="addToCartBtn">+ Carrinho</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Amarílis</h3>
+                    <div class="price"> R$10.50 <span>R$15.50</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-40%</span>
+                <div class="image">
+                    <img src="/img/Antúrio-removebg-preview.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" id="addToCartBtn">+ Carrinho</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Antúrio</h3>
+                    <div class="price"> R$17.99 <span>R$28.99</span></div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-10%</span>
+                <div class="image">
+                    <img src="/img/Astromélia-removebg-preview.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" id="addToCartBtn">+ Carrinho</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Astromélia</h3>
+                    <div class="price"> R$8.99 <span>R$10.99</span></div>
+                </div>
+            </div>
+
+            <div class="box">
+                <span class="discount">-13%</span>
+                <div class="image">
+                    <img src="/img/bromélia-alium.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" id="addToCartBtn">+ Carrinho</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Bromélia Allium</h3>
+                    <div class="price"> R$13.99 <span>R$17.99</span></div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-18%</span>
+                <div class="image">
+                    <img src="/img/Bromélia-removebg-preview.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" id="addToCartBtn">+ Carrinho</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Bromélia</h3>
+                    <div class="price"> R$14.99 <span>R$19.99</span></div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-12%</span>
+                <div class="image">
+                    <img src="/img/Ciclame-removebg-preview.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" id="addToCartBtn">+ Carrinho</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Ciclame</h3>
+                    <div class="price"> R$22.49 <span>R$25.99</span></div>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <span class="discount">-25%</span>
+                <div class="image">
+                    <img src="/img/Crisântemo-removebg-preview.png" alt="">
+                    <div class="icons">
+                        <a href="#" class="fas fa-heart"></a>
+                        <a href="#" class="cart-btn" id="addToCartBtn">+ Carrinho</a>
+                        <a href="" class="fas fa-share"></a>
+                    </div>
+                </div>
+                <div class="content">
+                    <h3>Crisântemo</h3>
+                    <div class="price"> R$10.00 <span>R$15.00</span></div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+    <!--FIM DOS PRODUTOS-->
+
+    <!--INICIO DAS AVALICOES-->
+
+    <section class="review" id="review">
+
+        <h1 class="heading"> Avaliações <span>de clientes</span></h1>
+
+        <div class="box-container">
+
+            <div class="box">
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Eu simplesmente adoro a variedade de flores tropicais oferecidas por esta floricultura! Sempre
+                    encontro opções exóticas e únicas para presentear meus amigos e familiares. Além disso, a qualidade
+                    das flores é impecável, e a entrega gratuita é um bônus maravilhoso.</p>
+                <div class="user">
+                    <img src="/img/pic-1.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Anne</h3>
+                        <span>Cliente satisfeita</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Nunca fui tão bem atendido em uma floricultura! A equipe desta loja é incrível. Eles me ajudaram a
+                    escolher o arranjo perfeito para o aniversário da minha esposa, e ela ficou profundamente tocada
+                    pela beleza das flores tropicais. </p>
+                <div class="user">
+                    <img src="/img/pic-2.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Sharon</h3>
+                        <span>Cliente satisfeita</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+            <div class="box">
+
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p>Estou completamente impressionado com a qualidade e frescor das flores que recebi desta floricultura.
+                    Cada pétala parecia ter sido cuidadosamente escolhida. Além disso, a entrega gratuita foi uma
+                    surpresa agradável.</p>
+                <div class="user">
+                    <img src="/img/pic-3.jpg" alt="">
+                    <div class="user-info">
+                        <h3>Helen</h3>
+                        <span>Cliente satisfeita</span>
+                    </div>
+                </div>
+                <span class="fas fa-quote-right"></span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--FIM DAS AVALICOES-->
+
+
+    <!--INICIO DOS CONTATOS-->
+    <section class="contact" id="contact">
+
+        <h1 class="heading"> <span> Fale </span>conosco</h1>
+
+        <div class="row">
+            <form id="myForm">
+                <input type="text" placeholder="nome" class="box" required>
+                <input type="email" placeholder="email" class="box" required>
+                <input type="number" placeholder="número" class="box" required>
+                <textarea name="" class="box" placeholder="menssagem" id="" cols="30" rows="10" required></textarea>
+                <input type="submit" value="Enviar menssagem" class="btn" id="btn">
+            </form>
+            <div class="image">
+                <img src="/img/contact-img.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <!--FIM DOS CONTATOS-->
+
+    <!--INICIO DO FOOTER-->
+    <section class="footer">
+
+        <div class="box-container">
+            <div class="box">
+                <h3>links rápidos</h3>
+                <a href="#home">home</a>
+                <a href="#about">sobre</a>
+                <a href="#products">ofertas</a>
+                <a href="#review">valiações</a>
+                <a href="#contact">contato</a>
+            </div>
+
+
+            <div class="box">
+                <h3>links extras</h3>
+                <a href="/Login.html">minha conta</a>
+                <a href="/Tela de compras.html">meus pedidos</a>
+                <a href="#">English Version</a>
+            </div>
+
+            <div class="box">
+                <h3>locais</h3>
+                <a href="">Camaragibe</a>
+                <a href="">Recife</a>
+                <a href="">Olinda</a>
+            </div>
+
+            <div class="box">
+                <h3>informações de contato</h3>
+                <a href="">+55 81 2345-6789</a>
+                <a href="">+55 21 3345-6789</a>
+                <a href="">+55 11 2355-8789</a>
+                <a href="">greenday@gmail.com</a>
+                <img src="/img/http___pluspng.com_img-png_payment-method-png-payment-options-1003.png"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="credit bg-primary text-center py-3">
+            <p class="mb-0">Greenday © 2023. | Todos os direitos reservados.</p>
+        </div>
+    </section>
+    <!--FIM DO FOOTER-->
+
+
+
+    <script src="Js/paginaprincipal.js"></script>
+
+    <script>
+        window.renderBotWidget(
+            '648677e8addd9100120a0721'
+        );
+    </script>
+
+
+
+
+</body>
+
+</html>
